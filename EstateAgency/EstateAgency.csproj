@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3F437C7-4F4D-436A-9083-C1FE66E39405}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EstateAgency</RootNamespace>
+    <AssemblyName>EstateAgency</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Characteristic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characteristic.Designer.cs">
+      <DependentUpon>Characteristic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collusive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Collusive.Designer.cs">
+      <DependentUpon>Collusive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CollusiveCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CollusiveCard.Designer.cs">
+      <DependentUpon>CollusiveCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contractor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contractor.Designer.cs">
+      <DependentUpon>Contractor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deals.Designer.cs">
+      <DependentUpon>Deals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="District.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="District.Designer.cs">
+      <DependentUpon>District.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Offers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Offers.Designer.cs">
+      <DependentUpon>Offers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Realtor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Realtor.Designer.cs">
+      <DependentUpon>Realtor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\DataContext.cs" />
+    <Compile Include="Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TypicalCharacteristic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TypicalCharacteristic.Designer.cs">
+      <DependentUpon>TypicalCharacteristic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjectCard.Designer.cs">
+      <DependentUpon>ObjectCard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Characteristic.resx">
+      <DependentUpon>Characteristic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collusive.resx">
+      <DependentUpon>Collusive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollusiveCard.resx">
+      <DependentUpon>CollusiveCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contractor.resx">
+      <DependentUpon>Contractor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deals.resx">
+      <DependentUpon>Deals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="District.resx">
+      <DependentUpon>District.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Offers.resx">
+      <DependentUpon>Offers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Realtor.resx">
+      <DependentUpon>Realtor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TypicalCharacteristic.resx">
+      <DependentUpon>TypicalCharacteristic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectCard.resx">
+      <DependentUpon>ObjectCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\direction-signs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\real-estate-business-house-on-a-hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house-contract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signing-the-contract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-document-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-black-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous-track-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next-track-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\houses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graphic-progression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graphic-progression %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graphic-progression %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searching-for-a-house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\real-estate-deal-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\real-estate-business-house-on-a-hand %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-card-of-a-man-with-contact-info.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
